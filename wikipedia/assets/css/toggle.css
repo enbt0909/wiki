@@ -1,0 +1,46 @@
+/* .toogle-heading {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* Verstecke den Checkbox-Standard-Button */
+/* input[type="checkbox"] {
+  display: none;
+} */
+
+/* Stil für das Label */
+/* label {
+  cursor: pointer;
+} */
+
+/* Verstecke den Inhalt, wenn die Checkbox nicht ausgewählt ist */
+/* #content {
+  display: none;
+} */
+
+/* Zeige den Inhalt an, wenn die Checkbox ausgewählt ist */
+/* input:checked + label + #content {
+  display: block;
+} */
+
+/* ************************************* */
+  /* Stil für die Überschrift */
+  .toogle-heading {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+    /* Verstecke den Inhalt, wenn die Checkbox nicht ausgewählt ist */
+    #content {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+      /* Zeige den Inhalt an, wenn die Checkbox ausgewählt ist */
+  input:checked + .toogle-heading + #content {
+    display: block;
+  }
